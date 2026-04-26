@@ -1,4 +1,4 @@
 interface:
   display_name: "逆向图片生成器skill"
   short_description: "把上传的图片反向生成可复用提示词。"
-  default_prompt: "Use $ni-xiang-tu-pian-sheng-cheng-qi-skill 把这张图片反向生成一份中文优先、可直接复制使用的提示词。"
+  default_prompt: "Use $ni-xiang-tu-pian-sheng-cheng-qi-skill 反推这张图。"

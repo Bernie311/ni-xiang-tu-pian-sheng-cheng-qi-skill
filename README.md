@@ -62,16 +62,28 @@ git clone https://github.com/Bernie311/ni-xiang-tu-pian-sheng-cheng-qi-skill.git
 
 ## 在 Codex 中调用
 
-显式调用：
+最短用法：
+
+```text
+反推这张图
+```
+
+常用短句：
+
+```text
+图片转提示词
+```
+
+指定平台：
+
+```text
+反推这张图，给我 Midjourney 和 SDXL 版本
+```
+
+无法自动触发时，再用显式调用：
 
 ```text
 使用 $ni-xiang-tu-pian-sheng-cheng-qi-skill，把这张图片反向生成一份中文优先、可直接复制使用的提示词。
-```
-
-自然语言触发：
-
-```text
-帮我把这张图片反推成 Midjourney 和 SDXL 提示词。
 ```
 
 ## 在 Claude Code 中安装
@@ -100,16 +112,16 @@ git clone https://github.com/Bernie311/ni-xiang-tu-pian-sheng-cheng-qi-skill.git
 /ni-xiang-tu-pian-sheng-cheng-qi-skill 把这张图片反向生成中文提示词、英文提示词、Midjourney 版本和 SDXL 负面提示词。
 ```
 
+短句触发：
+
+```text
+反推这张图
+```
+
 指定使用：
 
 ```text
-请使用 ni-xiang-tu-pian-sheng-cheng-qi-skill 这个 skill，把这张图片反向生成可复用的 AI 绘图提示词。
-```
-
-自然语言触发：
-
-```text
-请把这张图片转换成可复用的 AI 绘图提示词。
+请使用 ni-xiang-tu-pian-sheng-cheng-qi-skill 这个 skill，反推这张图。
 ```
 
 ## 默认输出格式
@@ -131,7 +143,13 @@ git clone https://github.com/Bernie311/ni-xiang-tu-pian-sheng-cheng-qi-skill.git
 上传一张图片后输入：
 
 ```text
-使用 $ni-xiang-tu-pian-sheng-cheng-qi-skill，把这张图片反向生成中文提示词、英文提示词、Midjourney 版本和 SDXL 负面提示词。
+反推这张图
+```
+
+如果没有自动触发，再输入：
+
+```text
+使用 $ni-xiang-tu-pian-sheng-cheng-qi-skill，反推这张图。
 ```
 
 合格标准：

@@ -25,15 +25,23 @@ GitHub 安装示例：
 
 `python install-skill-from-github.py --repo 用户名/仓库名 --path ni-xiang-tu-pian-sheng-cheng-qi-skill`
 
-显式调用示例：
+最短用法：
+
+`反推这张图`
+
+常用短句：
+
+`图片转提示词`
+
+指定平台：
+
+`反推这张图，给我 Midjourney 和 SDXL 版本`
+
+无法自动触发时，再用显式调用：
 
 `使用 $ni-xiang-tu-pian-sheng-cheng-qi-skill，把这张图片反向生成一份中文优先、可直接复制使用的提示词。`
 
-自然语言触发示例：
-
-`帮我把这张图片反推成 Midjourney 和 SDXL 提示词。`
-
-中文注释：安装或更新后重启 Codex，再上传图片测试。Codex 会根据 frontmatter 里的 `description` 判断是否自动使用这个 skill；显式调用时使用 `$ni-xiang-tu-pian-sheng-cheng-qi-skill` 更稳定。
+中文注释：安装或更新后重启 Codex，再上传图片测试。Codex 会根据 frontmatter 里的 `description` 判断是否自动使用这个 skill；日常优先输入短句，无法触发时再使用 `$ni-xiang-tu-pian-sheng-cheng-qi-skill`。
 
 ### Claude Code
 
@@ -49,13 +57,13 @@ GitHub 安装示例：
 
 `/ni-xiang-tu-pian-sheng-cheng-qi-skill 把这张图片反向生成中文提示词、英文提示词、Midjourney 版本和 SDXL 负面提示词。`
 
+短句触发：
+
+`反推这张图`
+
 指定使用示例：
 
-`请使用 ni-xiang-tu-pian-sheng-cheng-qi-skill 这个 skill，把这张图片反向生成中文提示词、英文提示词、Midjourney 版本和 SDXL 负面提示词。`
-
-自然语言触发示例：
-
-`请把这张图片转换成可复用的 AI 绘图提示词。`
+`请使用 ni-xiang-tu-pian-sheng-cheng-qi-skill 这个 skill，反推这张图。`
 
 中文注释：Claude Code 会从个人、项目和插件 skill 目录自动发现 skills。`name` 字段会成为可直接调用的 slash command，因此可以用 `/ni-xiang-tu-pian-sheng-cheng-qi-skill` 调用；Claude Code 也会根据 `description` 自动选择相关 skill。更新 skill 后重启 Claude Code；如果没有生效，先让 Claude Code 列出可用 skills，或用 `claude --debug` 查看加载错误。
 
